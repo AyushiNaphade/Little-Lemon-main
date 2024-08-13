@@ -2,6 +2,7 @@ import Heading from "../sections/reservePages/Heading";
 import ReservationForm from "../sections/reservePages/BookingForm";
 import { useState } from "react";
 import { fetchAPI } from "../../bookingsAPI";
+import BookingForm from "../sections/reservePages/BookingForm";
 export default function BookingPage() {
 
 
@@ -15,7 +16,7 @@ export default function BookingPage() {
   return (
     <>
       <Heading />
-      <ReservationForm availableTimes={availableTimes} updateTimes={updateTimes} />
+      <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
       <br/>
     </>
   );
