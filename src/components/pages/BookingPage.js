@@ -15,7 +15,7 @@ export default function BookingPage() {
   return (
     <>
       <Heading />
-      <ReservationForm availableTimes={availableTimes} updateTimes={updateTimes} />
+      <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
       <br/>
     </>
   );
